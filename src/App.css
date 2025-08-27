@@ -1,0 +1,48 @@
+/* App.css: Estilos principales para el componente App de Científica Flix */
+/* Define el contenedor principal (#root) con ancho máximo y centrado */
+/* Estiliza el logo con animación al pasar el ratón y rotación en navegadores compatibles */
+/* Incluye estilos para tarjetas (.card) y texto de documentación (.read-the-docs) */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Estilo del logo con transición y sombra al hover */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animación de rotación para el logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+/* Estilo para tarjetas de contenido */
+.card {
+  padding: 2em;
+}
+/* Estilo para texto de documentación o instrucciones */
+.read-the-docs {
+  color: #888;
+}
