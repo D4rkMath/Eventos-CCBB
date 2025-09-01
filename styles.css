@@ -130,7 +130,7 @@ img {
 
 .logo-cientifica {
   height: 2rem;
-  filter: brightness(0) invert(1);
+  filter: brightness(1) invert(0);
 }
 
 .profile {
