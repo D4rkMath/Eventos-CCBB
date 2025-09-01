@@ -133,7 +133,7 @@
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
+  display: none; 
 }
 
 .logo-cientifica {
