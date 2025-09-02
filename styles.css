@@ -77,7 +77,6 @@ img {
 .icon-chevron-left:before { content: "◀";  font-style: normal; font-family: Arial, sans-serif; }
 .icon-chevron-right:before { content: "▶";  font-style: normal; font-family: Arial, sans-serif; }
 .icon-arrow-left:before { content: "←";  font-style: normal; font-family: Arial, sans-serif; }
-.icon-search:before { content: "🔍"; font-style: normal; font-family: Arial, sans-serif; }
 /* Layout */
 .page {
   display: none;
