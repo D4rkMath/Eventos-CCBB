@@ -70,18 +70,14 @@ img {
 
 /* Icons */
 
-.icon-play:before { 
-  content: "▶"; 
-  font-style: normal; 
-  font-family: Arial, sans-serif; 
-}
-.icon-info:before { content: "ℹ"; }
-.icon-plus:before { content: "+"; }
-.icon-thumbs-up:before { content: "👍"; }
-.icon-chevron-left:before { content: "◀"; }
-.icon-chevron-right:before { content: "▶"; }
-.icon-arrow-left:before { content: "←"; }
-
+.icon-play:before { content: "▶"; font-style: normal; font-family: Arial, sans-serif; }
+.icon-info:before { content: "ℹ";  font-style: normal; font-family: Arial, sans-serif; }
+.icon-plus:before { content: "+";  font-style: normal; font-family: Arial, sans-serif; }
+.icon-thumbs-up:before { content: "👍";  font-style: normal; font-family: Arial, sans-serif; }
+.icon-chevron-left:before { content: "◀";  font-style: normal; font-family: Arial, sans-serif; }
+.icon-chevron-right:before { content: "▶";  font-style: normal; font-family: Arial, sans-serif; }
+.icon-arrow-left:before { content: "←";  font-style: normal; font-family: Arial, sans-serif; }
+.icon-search:before { content: "🔍"; font-style: normal; font-family: Arial, sans-serif; }
 /* Layout */
 .page {
   display: none;
