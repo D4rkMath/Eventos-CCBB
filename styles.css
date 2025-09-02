@@ -147,6 +147,13 @@ img {
   position: relative;
   padding-top: 45%;
   background-color: var(--background);
+  overflow: hidden; /* Evita que las imágenes sobresalgan */
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-img {
@@ -156,6 +163,12 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0; /* Inicialmente ocultas */
+  transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
+}
+
+.hero-img.active {
+  opacity: 1; /* La imagen activa será visible */
 }
 
 .hero-gradient {
@@ -172,6 +185,27 @@ img {
   bottom: 15%;
   left: 3rem;
   width: 40%;
+}
+
+/* Animación para rotar imágenes */
+@keyframes slideImages {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  33% { opacity: 1; }
+  43% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.hero-img:nth-child(1) {
+  animation: slideImages 9s infinite 0s; /* 9s total, empieza en 0s */
+}
+
+.hero-img:nth-child(2) {
+  animation: slideImages 9s infinite 3s; /* Comienza a los 3s */
+}
+
+.hero-img:nth-child(3) {
+  animation: slideImages 9s infinite 6s; /* Comienza a los 6s */
 }
 
 .hero-title {
