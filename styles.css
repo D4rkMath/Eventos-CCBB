@@ -145,6 +145,7 @@ img {
 /* Hero Section */
 .hero-section {
   position: relative;
+  height: 100vh; /* Altura fija para la sección hero */
   padding-top: 45%;
   background-color: var(--background);
   overflow: hidden; /* Evita que las imágenes sobresalgan */
