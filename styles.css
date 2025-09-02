@@ -171,6 +171,25 @@ img {
   opacity: 1; /* La imagen activa será visible */
 }
 
+/* Animación para transicionar entre imágenes */
+@keyframes fadeImages {
+  0%, 16.67% { opacity: 0; } /* 0% a 1/6 (16.67%) - negro */
+  16.67%, 66.67% { opacity: 1; } /* 1/6 a 2/3 (66.67%) - imagen visible por 5s */
+  66.67%, 100% { opacity: 0; } /* 2/3 a 100% - fundido a negro */
+}
+
+.hero-img:nth-child(1) {
+  animation: fadeImages 18s infinite 0s; /* 18s total (3 imágenes x 6s ciclo) */
+}
+
+.hero-img:nth-child(2) {
+  animation: fadeImages 18s infinite 6s; /* Comienza a los 6s */
+}
+
+.hero-img:nth-child(3) {
+  animation: fadeImages 18s infinite 12s; /* Comienza a los 12s */
+}
+
 .hero-gradient {
   position: absolute;
   top: 0;
