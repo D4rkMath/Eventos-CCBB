@@ -187,26 +187,7 @@ img {
   width: 40%;
 }
 
-/* Animación para rotar imágenes */
-@keyframes slideImages {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  33% { opacity: 1; }
-  43% { opacity: 0; }
-  100% { opacity: 0; }
-}
 
-.hero-img:nth-child(1) {
-  animation: slideImages 9s infinite 0s; /* 9s total, empieza en 0s */
-}
-
-.hero-img:nth-child(2) {
-  animation: slideImages 9s infinite 3s; /* Comienza a los 3s */
-}
-
-.hero-img:nth-child(3) {
-  animation: slideImages 9s infinite 6s; /* Comienza a los 6s */
-}
 
 .hero-title {
   font-size: 3rem;
