@@ -164,30 +164,29 @@ img {
   height: 100%;
   object-fit: cover;
   opacity: 0; /* Inicialmente ocultas */
-  transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
+  transform: scale(1); /* Escala inicial */
+  transition: opacity 1s ease-in-out, transform 5s ease-in-out; /* Transición de opacidad y escala */
 }
-
 .hero-img.active {
   opacity: 1; /* La imagen activa será visible */
 }
 
-/* Animación para transicionar entre imágenes */
-@keyframes fadeImages {
-  0%, 16.67% { opacity: 0; } /* 0% a 1/6 (16.67%) - negro */
-  16.67%, 66.67% { opacity: 1; } /* 1/6 a 2/3 (66.67%) - imagen visible por 5s */
-  66.67%, 100% { opacity: 0; } /* 2/3 a 100% - fundido a negro */
+@keyframes kenBurns {
+  0%, 14.28% { opacity: 0; transform: scale(1); } /* Fundido a negro y escala inicial */
+  14.28%, 71.42% { opacity: 1; transform: scale(1.2); } /* 5s de zoom hasta 1.2 */
+  71.42%, 100% { opacity: 0; transform: scale(1.2); } /* Fundido a negro manteniendo zoom */
 }
 
 .hero-img:nth-child(1) {
-  animation: fadeImages 18s infinite 0s; /* 18s total (3 imágenes x 6s ciclo) */
+  animation: kenBurns 21s infinite 0s; /* 21s total (7s por imagen x 3) */
 }
 
 .hero-img:nth-child(2) {
-  animation: fadeImages 18s infinite 6s; /* Comienza a los 6s */
+  animation: kenBurns 21s infinite 7s; /* Comienza a los 7s */
 }
 
 .hero-img:nth-child(3) {
-  animation: fadeImages 18s infinite 12s; /* Comienza a los 12s */
+  animation: kenBurns 21s infinite 14s; /* Comienza a los 14s */
 }
 
 .hero-gradient {
