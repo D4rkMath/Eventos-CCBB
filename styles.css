@@ -166,29 +166,26 @@ img {
   object-fit: cover;
   opacity: 0; /* Inicialmente ocultas */
   transform: scale(1); /* Escala inicial */
-  transition: opacity 1s ease-in-out, transform 5s ease-in-out; /* Transición de opacidad y escala */
+  transition: opacity 1.5s ease-in-out, transform 7s ease-in-out; /* Transición de 1.5s para fundido, 7s para zoom */
 }
 .hero-img.active {
   opacity: 1; /* La imagen activa será visible */
 }
 
 @keyframes kenBurns {
-  0%, 14.28% { opacity: 0; transform: scale(1); } /* Fundido a negro y escala inicial */
-  14.28%, 71.42% { opacity: 1; transform: scale(1.2); } /* 5s de zoom hasta 1.2 */
-  71.42%, 100% { opacity: 0; transform: scale(1.2); } /* Fundido a negro manteniendo zoom */
+  0%, 10.5% { opacity: 0; transform: scale(1); } /* 1.5s fundido inicial (10.5% de 14.28s) */
+  10.5%, 71.5% { opacity: 1; transform: scale(1.2); } /* 7s de visibilidad + zoom (71.5% - 10.5% = 61%) */
+  71.5%, 100% { opacity: 0; transform: scale(1.2); } /* 1.5s fundido final */
 }
 
-.hero-img:nth-child(1) {
-  animation: kenBurns 21s infinite 0s; /* 21s total (7s por imagen x 3) */
-}
-
-.hero-img:nth-child(2) {
-  animation: kenBurns 21s infinite 7s; /* Comienza a los 7s */
-}
-
-.hero-img:nth-child(3) {
-  animation: kenBurns 21s infinite 14s; /* Comienza a los 14s */
-}
+.hero-img:nth-child(1) { animation: kenBurns 80s infinite 0s; } /* 80s total, comienza a 0s */
+.hero-img:nth-child(2) { animation: kenBurns 80s infinite 10s; } /* Comienza a 10s */
+.hero-img:nth-child(3) { animation: kenBurns 80s infinite 20s; } /* Comienza a 20s */
+.hero-img:nth-child(4) { animation: kenBurns 80s infinite 30s; } /* Comienza a 30s */
+.hero-img:nth-child(5) { animation: kenBurns 80s infinite 40s; } /* Comienza a 40s */
+.hero-img:nth-child(6) { animation: kenBurns 80s infinite 50s; } /* Comienza a 50s */
+.hero-img:nth-child(7) { animation: kenBurns 80s infinite 60s; } /* Comienza a 60s */
+.hero-img:nth-child(8) { animation: kenBurns 80s infinite 70s; } /* Comienza a 70s */
 
 .hero-gradient {
   position: absolute;
