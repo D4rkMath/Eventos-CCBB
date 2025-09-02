@@ -146,7 +146,6 @@ img {
 .hero-section {
   position: relative;
   height: 100vh; /* Altura fija para la sección hero */
-  padding-top: 85%;
   background-color: var(--background);
   overflow: hidden; /* Evita que las imágenes sobresalgan */
 }
@@ -154,7 +153,8 @@ img {
 .hero-image-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Hereda de .hero-section */
+  min-height: 100vh; /* Garantiza altura mínima */
 }
 
 .hero-img {
