@@ -301,7 +301,7 @@ img {
 
 /* Carousels */
 .carousels-container {
-   margin-top: -140px;
+   margin-top: -120px;
   position: relative;
   z-index: 10;
   padding-bottom: 5rem;
