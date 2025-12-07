@@ -1,4 +1,3 @@
-vento
 // Content data for the application
 const carouselCategories = [
   { id: 1, name: "Webinars Internacionales" },
