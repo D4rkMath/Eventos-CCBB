@@ -1,12 +1,12 @@
-
+vento
 // Content data for the application
 const carouselCategories = [
-  { id: 1, name: "Populares en Científica" },
-  { id: 2, name: "Continuar viendo" },
-  { id: 3, name: "Tendencias actuales" },
-  { id: 4, name: "Documentales premiados" },
-  { id: 5, name: "Ciencia y Tecnología" },
-  { id: 6, name: "Recomendaciones para ti" }
+  { id: 1, name: "Webinars Internacionales" },
+  { id: 2, name: "Eventos internos" },
+  { id: 3, name: "Capacitaciones internas 2025" },
+  { id: 4, name: "Capacitaciones internas 2024" },
+  { id: 5, name: "Capacitaciones internas 2023" },
+  { id: 6, name: "Próximamente" }
 ];
 
 // Generate content cards data
